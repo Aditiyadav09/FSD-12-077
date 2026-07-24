@@ -10,3 +10,6 @@ const add2 =(a,b) =>a+b;
 console.log(sum(20,10));
 console.log(add(20,10));
 console.log(add(20,10));
+//frontend ,class ,react,view,angular
+//html , css(bootstrap),tailwind,js
+//backend nodejs,springboot,fastapi,django,php
