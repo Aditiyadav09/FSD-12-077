@@ -15,13 +15,15 @@ const checkout = (name) => {
 };
 
 const task = new EventEmitter();
+task.once("exit", () => {
+  console.log("System shutting down");
+});
 task.once("greet",start);
 
 task.on("greet",login);
 task.on("greet",working);
-task.once("exit", () => {
-  console.log("System shutting down");
-});
+
 task.emit("greet", "Aditi Yadav");
 task.emit("greet","Mudit");
-task.emit("greet","Manya")
+task.emit("greet","Manya");
+task.emit("exit");
