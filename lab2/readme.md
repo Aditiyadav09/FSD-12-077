@@ -7,3 +7,6 @@ FS module directly communicate with operating system rather than browser the com
 -  Stream -> readStream() , writeStream()
 
 All functions are promise so it must be called with await keyword.
+### apendFile()
+it is to add
+### writeFile()
